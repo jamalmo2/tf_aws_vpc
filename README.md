@@ -1,8 +1,6 @@
 vpc terraform module
 ===========
 
-# This module is deprecated and [terraform-aws-modules/terraform-aws-vpc module](https://github.com/terraform-aws-modules/terraform-aws-vpc) published on [the Terraform registry](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws) should be used instead.
-
 ## This repository will not have active support any more.
 
 ---
@@ -50,7 +48,7 @@ Usage
 
 ```hcl
 module "vpc" {
-  source = "github.com/terraform-community-modules/tf_aws_vpc"
+  source = "Repo Source"
 
   name = "my-vpc"
 
@@ -68,9 +66,6 @@ module "vpc" {
   }
 }
 ```
-
-For Terraform version older than 0.7.0 use `ref=v1.0.0`:
-`source = "github.com/terraform-community-modules/tf_aws_vpc?ref=v1.0.0"`
 
 Outputs
 =======
@@ -96,13 +91,3 @@ Outputs
 **NOTE**: previous versions of this module returned a single string as a route
 table ID, while this version returns a list.
 
-Authors
-=======
-
-Originally created and maintained by [Casey Ransom](https://github.com/cransom)
-Hijacked by [Paul Hinze](https://github.com/phinze)
-
-License
-=======
-
-Apache 2 Licensed. See LICENSE for full details.
